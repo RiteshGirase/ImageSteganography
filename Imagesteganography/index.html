@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steganography Crypo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="steganography.min.js"></script>
+</head>
+
+<body>
+    <div class="high">
+    <div class="main">
+        <div class="container">
+            <input type="file" name="img" id="rt" accept="image/*" onchange="readURL(this)">
+            <div class="class">Source Image:</div>
+            <img src="" id="image1" alt="">
+
+        </div>
+
+        <div class="container2">
+            <input id="text" type="text">
+            <button class="btn" onclick="hide()">Hide Message</button>
+            <div class="image">
+                <img src="" id="image2" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="second">
+        <div class="cont">
+        <input type="file" name="img" accept="image/*" onchange="decodeURL(this)">
+        <div class="head">
+            <div class="txt"></div>
+        </div>
+        </div>
+
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
